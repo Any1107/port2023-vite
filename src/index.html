@@ -38,7 +38,7 @@
             <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
-        <!--웹표준개념 aria mdn -->
+        <!--웹표준개념 aria -->
         <div class="header_nav_mobile" 
              id="headerToggle"   
              aria-controls="primary-menu" 
@@ -51,9 +51,43 @@
       </div>
     </hearder>
     <!-- //header -->
+
     <main id="main" role="main">
       <section id="intro">
-        intro
+        <div class="intro_inner">
+          <div class="intro_title">
+            port developer
+          </div>
+          <!--라인은 장식적인 요소이므로 접근성에서 aria 히든처리함 -->
+          <div class="intro_lines" aria-hidden="true">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          <div class="intro_text">
+            <div class="text">
+              <div>talent is</div>
+              <div>found at the end of the</div>
+              <div>effort</div>
+            </div>
+            <div class="img">
+                <img src="assets/img/about.jpg" alt="어바웃미">
+            </div>
+          </div>
+          <div class="intro_lines bottom" aria-hidden="true">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>  
+          </div>
+        </div>
       </section>
       <!-- //intro -->
 
