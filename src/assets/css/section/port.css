@@ -48,6 +48,22 @@
 .port__item .p4 {
       background-color: var(--subBg400)
 }
+.port__item .p5{
+      background-color: var(--subBg500)
+}
+.port__item .p6 {
+      background-color: var(--subBg100)
+}
+.port__item .p7 {
+      background-color: var(--subBg200)
+}
+.port__item .p8 {
+      background-color: var(--subBg300)
+}.port__item .p9 {
+      background-color: var(--subBg400)
+}.port__item .p10 {
+      background-color: var(--subBg500)
+}
 .port_item .num {
       font-size: 2rem;
       font-family:var(--mainNum-font);
@@ -86,8 +102,12 @@
       text-align: center;
       padding: 0.6rem 1.5rem;
       margin-top: 1.5rem;
-}
 
+}
+.port_item .site:hover {
+      background-color: var(--black100);
+      color: var(--white);
+}
 @media(max-width:800px){
       .port_title{
             width: 100%;
