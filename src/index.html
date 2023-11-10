@@ -1,386 +1,416 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="한가지 사이트를 다양한 프레임워크를 통해 만들어 보는 포트폴리오 사이트입니다."/>
-    <meta name="keyword" content="포트폴리오, 리액트, 뷰, 넥스트, 웹스토리보이, portfolio, react.js, vue.js, next.js, webstoryboy" />
-    <title>포트폴리오 사이트 만들기 😇 Vite-Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="한가지 사이트를 다양한 프레임워크를 통해 만들어 보는 포트폴리오 사이트입니다." />
+  <meta name="keyword" content="포트폴리오, 리액트, 뷰, 넥스트, 웹스토리보이, portfolio, react.js, vue.js, next.js, webstoryboy" />
+  <title>포트폴리오 사이트 만들기 😇 Vite-Site</title>
 
-    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-  <body>
-    <div id="skip">
-      <a href="#header">헤더 영역 바로가기</a>
-      <a href="#intro">소개 영역 바로가기</a>
-      <a href="#skill">스킬 영역 바로가기</a>
-      <a href="#site">사이트 영역 바로가기</a>
-      <a href="#port">포트폴리오 영역 바로가기</a>
-      <a href="#contact">연락처 영역 바로가기</a>
-      <a href="#footer">푸터 영역 바로가기</a>
-    </div>
-    <!-- //skip -->
 
-    <header id="header" role="banner">
-      <div class="header_inner">
-        <div class="header_logo">
-          <h1>
-            <a href="#">portfolio<em>vite</em></a>
-          </h1>
+<body>
+  <div id="skip">
+    <a href="#header">헤더 영역 바로가기</a>
+    <a href="#intro">소개 영역 바로가기</a>
+    <a href="#skill">스킬 영역 바로가기</a>
+    <a href="#site">사이트 영역 바로가기</a>
+    <a href="#port">포트폴리오 영역 바로가기</a>
+    <a href="#contact">연락처 영역 바로가기</a>
+    <a href="#footer">푸터 영역 바로가기</a>
+  </div>
+  <!-- //skip -->
+
+  <header id="header" role="banner">
+    <div class="header_inner">
+      <div class="header_logo">
+        <h1>
+          <a href="#">portfolio<em>vite</em></a>
+        </h1>
+      </div>
+      <nav class="header_nav" role="navigation" aria-label="메인메뉴">
+        <ul>
+          <li><a href="#intro">intro</a></li>
+          <li><a href="#skill">skill</a></li>
+          <li><a href="#site">site</a></li>
+          <li><a href="#port">portfolio</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+      <!--웹표준개념 aria -->
+      <div class="header_nav_mobile" id="headerToggle" aria-controls="primary-menu" aria-expanded="false" role="button"
+        tabindex="0">
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <!-- //header -->
+
+  <main id="main" role="main">
+    <section id="intro">
+      <div class="intro_inner">
+        <h2 class="intro_title">
+          port developer
+        </h2>
+        <!--라인은 장식적인 요소이므로 접근성에서 aria 히든처리함 -->
+        <div class="intro_lines" aria-hidden="true">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </div>
-        <nav class="header_nav" role ="navigation" aria-label="메인메뉴">
-          <ul>
-            <li><a href="#intro">intro</a></li>
-            <li><a href="#skill">skill</a></li>
-            <li><a href="#site">site</a></li>
-            <li><a href="#port">portfolio</a></li>
-            <li><a href="#contact">contact</a></li>
-          </ul>
-        </nav>
-        <!--웹표준개념 aria -->
-        <div class="header_nav_mobile" 
-             id="headerToggle"   
-             aria-controls="primary-menu" 
-             aria-expanded="false" 
-             role="button"
-             tabindex="0"
-        >
-          <span></span>
+        <div class="intro_text">
+          <div class="text">
+            <div>talent is</div>
+            <div>found at the end of the</div>
+            <div>effort</div>
+          </div>
+          <div class="img">
+            <img src="assets/img/about.jpg" alt="어바웃미">
+          </div>
+        </div>
+        <div class="intro_lines bottom" aria-hidden="true">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </div>
       </div>
-    </header>
-    <!-- //header -->
+    </section>
+    <!-- //intro -->
 
-    <main id="main" role="main">
-      <section id="intro">
-        <div class="intro_inner">
-          <h2 class="intro_title">
-            port developer
-          </h2>
-          <!--라인은 장식적인 요소이므로 접근성에서 aria 히든처리함 -->
-          <div class="intro_lines" aria-hidden="true">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+    <section id="skill">
+      <div class="skill_inner">
+        <h2 class="skill_title">
+          challenge <em>나의 도전</em>
+        </h2>
+        <div class="skill_desc">
+          <div>
+            <span>1.</span>
+            <h3>꿈을 설계하고 디자인하다.</h3>
+            <p>
+              나는 공간을 만드는 것을 좋아한다.
+              어려을 때부터 나만의 공간을 만드는 것을 좋아했고 나만의 다락방을 좋아했다.
+              단 한 사람이라도 내가 만든 공간 속에서 영감을 받거나 마음이 움직였으면 좋겠다.
+              나만의 공간을 마음껏 만들 수 있다는 건 코딩의 엄청난 매력인거 같다.
+              그 한구석에 나만의 꿈을 설계하고, 개발을 하며 앞으로도 살고 싶다.
+            </p>
           </div>
-          <div class="intro_text">
+          <div>
+            <span>2.</span>
+            <h3>열심히 할수록 기회는 따른다.</h3>
+            <p>
+              운이 좋은 사람은 없다. 단지 운을 만들 뿐이다.
+              운을 만들기 위해서는 내가 좋아하는 일이나 내가 하고 싶은 일에 몰두하면 된다.
+              몰두 하다보면 길이 보이고 방향이 보이게 된다.
+              운이란 고된 노동과 노력을 통해 스스로 만들어 내는 것이다.
+            </p>
+          </div>
+          <div>
+            <span>3.</span>
+            <h3>나에게 정직하다.</h3>
+            <p>
+              정직은 다른 사람보다 나에게 큰 의미를 부여해야 한다.
+              자신이 정직하지 않으면 진정으로 원하는 일을 열정적으로 밀고 나갈 수 없다.
+              마음에서 우러나오는 일을 해야 정직해지며 삶을 더 즐길 줄 알게 된다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //skill -->
+
+    <section id="site">
+      <div class="site_inner">
+        <h2 class="site_title">Site coding<em>나의 작업물</em></h2>
+        <div class="site_wrap">
+          <article class="site_item s1">
+            <span class="num">1.</span>
             <div class="text">
-              <div>talent is</div>
-              <div>found at the end of the</div>
-              <div>effort</div>
+              <div>Make</div>
+              <div>site compliant with</div>
+              <div>webstandard</div>
             </div>
-            <div class="img">
-                <img src="assets/img/about.jpg" alt="어바웃미">
+            <h3 class="title">웹 표준을 준수한 사이트 제작</h3>
+            <div class="btn">
+              <a href="http://github.com/Any1107/port2023-vite">code</a>
+              <a href="http://ajysmartweb.dothome.co.kr/port-vite">view</a>
             </div>
-          </div>
-          <div class="intro_lines bottom" aria-hidden="true">
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>  
-          </div>
+            <div class="info">
+              <span>site coding</span>
+              <span>production perido:two days</span>
+              <span>use stack:html5/css3,Css Variable, Vite</span>
+            </div>
+          </article>
+          <article class="site_item s2">
+            <span class="num">2.</span>
+            <div class="text">
+              <div>Make</div>
+              <div>site compliant with</div>
+              <div>webstandard</div>
+            </div>
+            <h3 class="title">리액트를 이용한 사이트 제작</h3>
+            <div class="btn">
+              <a href="http://github.com/Any1107/port2023-vite">code</a>
+              <a href="http://ajysmartweb.dothome.co.kr/port-vite">view</a>
+            </div>
+            <div class="info">
+              <span>site coding</span>
+              <span>production perido:two days</span>
+              <span>use stack:html5/css3,Css Variable, Vite</span>
+            </div>
+          </article>
+          <article class="site_item s3">
+            <span class="num">3.</span>
+            <div class="text">
+              <div>Make</div>
+              <div>site compliant with</div>
+              <div>webstandard</div>
+            </div>
+            <h3 class="title">리액트를 이용한 사이트 제작</h3>
+            <div class="btn">
+              <a href="http://github.com/Any1107/port2023-vite">code</a>
+              <a href="http://ajysmartweb.dothome.co.kr/port-vite">view</a>
+            </div>
+            <div class="info">
+              <span>site coding</span>
+              <span>production perido:two days</span>
+              <span>use stack:html5/css3,Css Variable, Vite</span>
+            </div>
+          </article>
+          <article class="site_item s4">
+            <span class="num">4.</span>
+            <div class="text">
+              <div>Make</div>
+              <div>site compliant with</div>
+              <div>webstandard</div>
+            </div>
+            <h3 class="title">리액트를 이용한 사이트 제작</h3>
+            <div class="btn">
+              <a href="http://github.com/Any1107/port2023-vite">code</a>
+              <a href="http://ajysmartweb.dothome.co.kr/port-vite">view</a>
+            </div>
+            <div class="info">
+              <span>site coding</span>
+              <span>production perido:two days</span>
+              <span>use stack:html5/css3,Css Variable, Vite</span>
+            </div>
+          </article>
         </div>
-      </section>
-      <!-- //intro -->
 
-      <section id="skill">
-        <div class="skill_inner">
-          <h2 class="skill_title">
-            challenge <em>나의 도전</em>
-          </h2>
-          <div class="skill_desc">
+      </div>
+    </section>
+    <!-- //site -->
+
+    <section id="port">
+      <div class="port_inner">
+        <div class="port_title">
+          portfolio<em>포폴작업물</em>
+        </div>
+        <div class="port_wrap">
+          <article class="port_item p1">
+            <span class="num">01.</span>
+            <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
+              <img src="assets/img/port01.jpg" alt="포트폴리오1" />
+            </a>
+            <h3 class="title">포트폴리오1</h3>
+            <p class="desc">
+              포트폴리오 1소개
+            </p>
+            <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="port_item p2">
+            <span class="num">02.</span>
+            <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
+              <img src="assets/img/port02.jpg" alt="포트폴리오2" />
+            </a>
+            <h3 class="title">포트폴리오2</h3>
+            <p class="desc">
+              포트폴리오 2소개
+            </p>
+            <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="port_item p3">
+            <span class="num">03.</span>
+            <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
+              <img src="assets/img/port03.jpg" alt="포트폴리오3" />
+            </a>
+            <h3 class="title">포트폴리오3</h3>
+            <p class="desc">
+              포트폴리오 3소개
+            </p>
+            <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="port_item p4">
+            <span class="num">04.</span>
+            <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
+              <img src="assets/img/port04.jpg" alt="포트폴리오4" />
+            </a>
+            <h3 class="title">포트폴리오4</h3>
+            <p class="desc">
+              포트폴리오 4소개
+            </p>
+            <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="port_item p5">
+            <span class="num">05.</span>
+            <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
+              <img src="assets/img/port05.jpg" alt="포트폴리오5" />
+            </a>
+            <h3 class="title">포트폴리오5</h3>
+            <p class="desc">
+              포트폴리오 5소개
+            </p>
+            <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="port_item p6">
+            <span class="num">06.</span>
+            <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
+              <img src="assets/img/port06.jpg" alt="포트폴리오6" />
+            </a>
+            <h3 class="title">포트폴리오6</h3>
+            <p class="desc">
+              포트폴리오 6소개
+            </p>
+            <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="port_item p7">
+            <span class="num">07.</span>
+            <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
+              <img src="assets/img/port07.jpg" alt="포트폴리오1" />
+            </a>
+            <h3 class="title">포트폴리오7</h3>
+            <p class="desc">
+              포트폴리오 7소개
+            </p>
+            <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="port_item p8">
+            <span class="num">08.</span>
+            <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
+              <img src="assets/img/port08.jpg" alt="포트폴리오8" />
+            </a>
+            <h3 class="title">포트폴리오8</h3>
+            <p class="desc">
+              포트폴리오 8소개
+            </p>
+            <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="port_item p9">
+            <span class="num">09.</span>
+            <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
+              <img src="assets/img/port09.jpg" alt="포트폴리오9" />
+            </a>
+            <h3 class="title">포트폴리오9</h3>
+            <p class="desc">
+              포트폴리오 9소개
+            </p>
+            <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
+          </article>
+          <article class="port_item p10">
+            <span class="num">10.</span>
+            <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
+              <img src="assets/img/port10.jpg" alt="포트폴리오10" />
+            </a>
+            <h3 class="title">포트폴리오10</h3>
+            <p class="desc">
+              포트폴리오 10소개
+            </p>
+            <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <!-- //port -->
+
+    <section id="contact">
+      <div class="contact__inner">
+        <h2 class="contact__title">Contact</h2>
+        <div class="contact__lines" aria-hidden="true">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        <div class="contact__text">
+          <div class="text">
             <div>
-              <span>1.</span>
-              <h3>꿈을 설계하고 디자인하다.</h3>
-              <p>
-                나는 공간을 만드는 것을 좋아한다. 
-                어려을 때부터 나만의 공간을 만드는 것을 좋아했고 나만의 다락방을 좋아했다. 
-                단 한 사람이라도 내가 만든 공간 속에서 영감을 받거나 마음이 움직였으면 좋겠다.
-                나만의 공간을 마음껏 만들 수 있다는 건 코딩의 엄청난 매력인거 같다. 
-                그 한구석에 나만의 꿈을 설계하고, 개발을 하며 앞으로도 살고 싶다.
-              </p> 
+              <a href="https://open.kakao.com/o/soNVNtRf" target="_blank" rel="noreferrer">KAKAO:ajysmartweb</a>
             </div>
             <div>
-              <span>2.</span>
-              <h3>열심히 할수록 기회는 따른다.</h3>
-              <p>
-                  운이 좋은 사람은 없다. 단지 운을 만들 뿐이다. 
-                  운을 만들기 위해서는 내가 좋아하는 일이나 내가 하고 싶은 일에 몰두하면 된다.
-                  몰두 하다보면 길이 보이고 방향이 보이게 된다. 
-                  운이란 고된 노동과 노력을 통해 스스로 만들어 내는 것이다.
-              </p>
-            </div>
-            <div>
-              <span>3.</span>
-              <h3>나에게 정직하다.</h3>
-              <p>
-                  정직은 다른 사람보다 나에게 큰 의미를 부여해야 한다. 
-                  자신이 정직하지 않으면 진정으로 원하는 일을 열정적으로 밀고 나갈 수 없다. 
-                  마음에서 우러나오는 일을 해야 정직해지며 삶을 더 즐길 줄 알게 된다.
-              </p>
+              <a href="mailto:ajysmartweb@gmail.com" target="_blank" rel="noreferrer">mail : AJYSMARTWEB@GMAIL.COM</a>
             </div>
           </div>
         </div>
-      </section>
-      <!-- //skill -->
-
-      <section id="site">
-        <div class="site_inner">
-          <h2 class="site_title">Site coding<em>나의 작업물</em></h2>
-          <div class="site_wrap">
-            <article class="site_item s1">
-              <span class="num">1.</span>
-              <div class="text">
-                <div>Make</div>
-                <div>site compliant with</div>
-                <div>webstandard</div>
-              </div>
-              <h3 class="title">웹 표준을 준수한 사이트 제작</h3>
-              <div class="btn">
-                <a href="http://github.com/Any1107/port2023-vite">code</a>
-                <a href="http://ajysmartweb.dothome.co.kr/port-vite">view</a>
-              </div>
-              <div class="info">
-                <span>site coding</span>
-                <span>production perido:two days</span>
-                <span>use stack:html5/css3,Css Variable, Vite</span>
-              </div>
-            </article>
-            <article class="site_item s2">
-              <span class="num">2.</span>
-              <div class="text">
-                <div>Make</div>
-                <div>site compliant with</div>
-                <div>webstandard</div>
-              </div>
-              <h3 class="title">리액트를 이용한 사이트 제작</h3>
-              <div class="btn">
-                <a href="http://github.com/Any1107/port2023-vite">code</a>
-                <a href="http://ajysmartweb.dothome.co.kr/port-vite">view</a>
-              </div>
-              <div class="info">
-                <span>site coding</span>
-                <span>production perido:two days</span>
-                <span>use stack:html5/css3,Css Variable, Vite</span>
-              </div>
-            </article>
-            <article class="site_item s3">
-              <span class="num">3.</span>
-              <div class="text">
-                <div>Make</div>
-                <div>site compliant with</div>
-                <div>webstandard</div>
-              </div>
-              <h3 class="title">리액트를 이용한 사이트 제작</h3>
-              <div class="btn">
-                <a href="http://github.com/Any1107/port2023-vite">code</a>
-                <a href="http://ajysmartweb.dothome.co.kr/port-vite">view</a>
-              </div>
-              <div class="info">
-                <span>site coding</span>
-                <span>production perido:two days</span>
-                <span>use stack:html5/css3,Css Variable, Vite</span>
-              </div>
-            </article>
-            <article class="site_item s4">
-              <span class="num">4.</span>
-              <div class="text">
-                <div>Make</div>
-                <div>site compliant with</div>
-                <div>webstandard</div>
-              </div>
-              <h3 class="title">리액트를 이용한 사이트 제작</h3>
-              <div class="btn">
-                <a href="http://github.com/Any1107/port2023-vite">code</a>
-                <a href="http://ajysmartweb.dothome.co.kr/port-vite">view</a>
-              </div>
-              <div class="info">
-                <span>site coding</span>
-                <span>production perido:two days</span>
-                <span>use stack:html5/css3,Css Variable, Vite</span>
-              </div>
-            </article>
-          </div>
-      
+        <div class="contact__lines bottom" aria-hidden="true">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </div>
-      </section>
-      <!-- //site -->
+      </div>
+    </section>
+    <!--//contact  -->
+  </main>
+  <!-- //main -->
 
-      <section id="port">
-        <div class="port_inner">
-          <div class="port_title">
-            portfolio<em>포폴작업물</em>
+  <footer id="footer" role="contentinfo">
+    <div class="footer_inner">
+      <div class="footer_text">
+        <span>ajysmartweb</span>
+        <span>©ajy</span>
+      </div>
+      <div class="footer_info">
+        <div class="left">
+          <div class="title">
+            <a href="#">social</a>
           </div>
-          <div class="port_wrap">
-            <article class="port_item p1">
-              <span class="num">01.</span>
-              <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
-                <img src="assets/img/port01.jpg" alt="포트폴리오1"/>
-              </a>
-              <h3 class="title">포트폴리오1</h3>
-              <p class="desc">
-                포트폴리오 1소개
-              </p>
-              <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
-            </article>
-            <article class="port_item p2">
-              <span class="num">02.</span>
-              <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
-                <img src="assets/img/port02.jpg" alt="포트폴리오2"/>
-              </a>
-              <h3 class="title">포트폴리오2</h3>
-              <p class="desc">
-                포트폴리오 2소개
-              </p>
-              <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
-            </article>
-            <article class="port_item p3">
-              <span class="num">03.</span>
-              <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
-                <img src="assets/img/port03.jpg" alt="포트폴리오3"/>
-              </a>
-              <h3 class="title">포트폴리오3</h3>
-              <p class="desc">
-                포트폴리오 3소개
-              </p>
-              <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
-            </article>
-            <article class="port_item p4">
-              <span class="num">04.</span>
-              <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
-                <img src="assets/img/port04.jpg" alt="포트폴리오4"/>
-              </a>
-              <h3 class="title">포트폴리오4</h3>
-              <p class="desc">
-                포트폴리오 4소개
-              </p>
-              <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
-            </article>
-            <article class="port_item p5">
-              <span class="num">05.</span>
-              <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
-                <img src="assets/img/port05.jpg" alt="포트폴리오5"/>
-              </a>
-              <h3 class="title">포트폴리오5</h3>
-              <p class="desc">
-                포트폴리오 5소개
-              </p>
-              <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
-            </article>
-            <article class="port_item p6">
-              <span class="num">06.</span>
-              <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
-                <img src="assets/img/port06.jpg" alt="포트폴리오6"/>
-              </a>
-              <h3 class="title">포트폴리오6</h3>
-              <p class="desc">
-                포트폴리오 6소개
-              </p>
-              <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
-            </article>
-            <article class="port_item p7">
-              <span class="num">07.</span>
-              <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
-                <img src="assets/img/port07.jpg" alt="포트폴리오1"/>
-              </a>
-              <h3 class="title">포트폴리오7</h3>
-              <p class="desc">
-                포트폴리오 7소개
-              </p>
-              <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
-            </article>
-            <article class="port_item p8">
-              <span class="num">08.</span>
-              <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
-                <img src="assets/img/port08.jpg" alt="포트폴리오8"/>
-              </a>
-              <h3 class="title">포트폴리오8</h3>
-              <p class="desc">
-                포트폴리오 8소개
-              </p>
-              <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
-            </article>
-            <article class="port_item p9">
-              <span class="num">09.</span>
-              <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
-                <img src="assets/img/port09.jpg" alt="포트폴리오9"/>
-              </a>
-              <h3 class="title">포트폴리오9</h3>
-              <p class="desc">
-                포트폴리오 9소개
-              </p>
-              <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
-            </article>
-            <article class="port_item p10">
-              <span class="num">10.</span>
-              <a href="http://github.com/Any1107/port2023-vite" target="_blank" class="img">
-                <img src="assets/img/port10.jpg" alt="포트폴리오10"/>
-              </a>
-              <h3 class="title">포트폴리오10</h3>
-              <p class="desc">
-                포트폴리오 10소개
-              </p>
-              <a href="http://ajysmartweb.dothome.co.kr/port-vite" target="_blank" class="site">사이트보기</a>
-            </article>
-
-          </div>
+          <p>under construction</p>
         </div>
-      </section>
-      <!-- //port -->
-
-      <section id="contact">
-        <div className="contact__inner">
-            <h2 className="contact__title">Contact</h2>
-            <div className="contact__lines" aria-hidden="true">
-                <span className="line"></span>
-                <span className="line"></span>
-                <span className="line"></span>
-                <span className="line"></span>
-                <span className="line"></span>
-                <span className="line"></span>
-                <span className="line"></span>
-            </div>
-            <div className="contact__text">
-                <div className="text">
-                    <div>
-                        <a href="https://open.kakao.com/o/soNVNtRf" target="_blank" rel="noreferrer">KAKAO:ajysmartweb</a>
-                    </div>
-                    <div>
-                        <a href="mailto:ajysmartweb@gmail.com" target="_blank" rel="noreferrer">mail : AJYSMARTWEB@GMAIL.COM</a>
-                    </div>
-                </div>
-            </div>
-            <div className="contact__lines bottom" aria-hidden="true">
-                <span className="line"></span>
-                <span className="line"></span>
-                <span className="line"></span>
-                <span className="line"></span>
-                <span className="line"></span>
-                <span className="line"></span>
-                <span className="line"></span>
-            </div>
+        <div class="right">
+          <h3>site</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/any1107">github</a>
+              <em>깃헙에 들어오시면 모든 소스를 볼 수 있습니다.</em>
+            </li>
+            <li>
+              <a href="https://anysmartweb.tistory.com">티스토리</a>
+              <em>티스토리에 들어오시면 유용한 정보를 볼 수 있습니다.</em>
+            </li>
+          </ul>
         </div>
-      </section>
-      <!--//contact  -->
-    </main>
-    <!-- //main -->
+      </div>
+      <div class="footer__right">
+        © 2023 ajysmartweb<br />
+        이 사이트는 비트를 이용하여 제작하였습니다.
+      </div>
 
-    <footer id="footer" role="contentinfo">
-      footer
-    </footer>
-    <!-- //footer -->
-    
-    <script type="module" src="assets/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  </body>
+  </footer>
+  <!-- //footer -->
+
+  <script type="module" src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</body>
+
 </html>
