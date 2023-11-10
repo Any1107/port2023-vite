@@ -39,29 +39,29 @@
 .port_item.p1 {
       background-color: var(--subBg100);
 }
-.port__item .p2 {
+.port_item .p2 {
       background-color: var(--subBg200)
 }
-.port__item .p3 {
+.port_item .p3 {
       background-color: var(--subBg300)
 }
-.port__item .p4 {
+.port_item .p4 {
       background-color: var(--subBg400)
 }
-.port__item .p5{
+.port_item .p5{
       background-color: var(--subBg500)
 }
-.port__item .p6 {
+.port_item .p6 {
       background-color: var(--subBg100)
 }
-.port__item .p7 {
+.port_item .p7 {
       background-color: var(--subBg200)
 }
-.port__item .p8 {
+.port_item .p8 {
       background-color: var(--subBg300)
-}.port__item .p9 {
+}.port_item .p9 {
       background-color: var(--subBg400)
-}.port__item .p10 {
+}.port_item .p10 {
       background-color: var(--subBg500)
 }
 .port_item .num {

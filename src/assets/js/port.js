@@ -1,12 +1,14 @@
-import { gsap } from "gsap";
-    
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 
-export function port() {
+console.log("GSAP Version:", gsap.version);
+console.log("ScrollTrigger Version:", ScrollTrigger.version);
+export function port(){
+
     gsap.registerPlugin(ScrollTrigger);
-    const horSection = gsap.utils.toArray(".port__item");
-
+    const horSection = gsap.utils.toArray(".port_item");
+    
     gsap.to(horSection, {
         xPercent: -120 * (horSection.length - 1),
         ease: "none",
@@ -21,4 +23,5 @@ export function port() {
             anticipatePin: 1,
         },
     });
+   
 }
